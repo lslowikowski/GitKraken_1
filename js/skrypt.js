@@ -9,4 +9,8 @@ $(document).ready(function () {
     $("#settings").click(function () { 
         $('#tresc').load('settings.html'); 
     });
+    //rozpoczęcie pracy nad nowym przyciskiem 
+    $("#view").click(function () { 
+        $('#tresc').load('view.html'); 
+    });
 });
