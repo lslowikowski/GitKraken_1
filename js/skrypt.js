@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    console.log("Po załadowaniu strony");
     $("#informacja").click(function () {
         alert("GitKraken to przyjazny program!");
     });
