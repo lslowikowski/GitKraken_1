@@ -1,6 +1,5 @@
-window.onload = function(){ 
-    var przyciskInformacja = document.getElementById("informacja"); 
-    przyciskInformacja.addEventListener("click", function () {
+$(document).ready(function () {
+     $("#informacja").click(function () { 
          alert("GitKraken to przyjazny program!"); 
-    });  
-}
+        });
+    });
