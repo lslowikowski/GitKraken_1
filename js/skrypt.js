@@ -1,3 +1,4 @@
+//to jest komentarz w lokalnym repozytorium
 $(document).ready(function () {
     console.log("Po załadowaniu strony");
     $("#informacja").click(function () {
