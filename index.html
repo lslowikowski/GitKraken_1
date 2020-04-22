@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="JavaScript">
+        <meta name="author" content="Leszek Słowikowski">
+        <title>Przykład działania GitKrakena</title>
+    </head>
+    <body>
+        <h1>Interfejs użytkownika</h1>
+        <img src="img/GitKraken_interface.png" alt="GitKraken interferjs">
+        <h2>Toolbar – Pasek narzędziowy</h2>
+        <table>
+            <tr>
+                <td><img src="icons/tool/undo.png" alt="undo"></td>
+                <td>
+                    Cofnij (Undo) – cofa zmiany. Wiele czynności wykonanych w GitKraken można cofnąć. Jeśli akcja jest nieodwracalna,
+                    przycisk Cofnij będzie wygaszony
+                </td>
+            </tr>
+            <tr>
+                <td><img src="icons/tool/redo.png" alt="redo"></td>
+                <td>
+                (Redo) – powtórz cofniętą zmianę. Jeżeli niepotrzebnie wycofamy jakąś zmianę, za pomocna przywrócić stan sprzed
+                cofnięcia
+                </td>
+            </tr>
+            <tr>
+                <td><img src="icons/tool/pop.png" alt="pop"></td>
+                <td>
+                    Pobierz (Pull/Fetch) - Za pomocą tego przycisku można pobierać zmiany ze zdalnych repozytoriów. Jeżeli obok przycisku
+                    znajduje się ▼ można za jego pomocą uściślić sposób pobierania: do wyboru są następujące opcje:
+                    <ul>
+                        <li>
+                            Fetch All – pobierz wszystkie zmiany bez scalania, aktualizuje kopię zdalnego repozytorium
+                        </li>
+                        <li>
+                            Pull (fast-forward if possible) – pobiera zmiany (fetch) i próbuje je scalić (merge) z lokalnym repozytorium
+                        </li>
+                        <li>
+                            Pull (fast-forward only): odpowiednik polecenia: git fetch git merge --ff-only
+                        </li>
+                        <li>
+                            Pull (rebase) – odpowiednik polecenia: git fetch git rebase
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="icons/tool/push.png" alt="push"></td>
+                <td>
+                    Wyślij (Push) – wysyła zmiany do zdalnego repozytorium zgodnie z ustawieniami wysyłania
+                </td>
+            </tr>
+            <tr>
+                <td><img src="icons/tool/branch.png" alt="branch"></td>
+                <td>
+                    Gałąź (Branch) – tworzy gałąź w lokalnym repozytorium
+                </td>
+            </tr>
+            <tr>
+                <td><img src="icons/tool/stash.png" alt="stash"></td>
+                <td>
+                    Odłóż na półkę (Stash) – Odkłada na półkę zmiany nad którymi pracujesz
+                </td>
+            </tr>
+            <tr>
+                <td><img src="icons/tool/stashpop.png" alt="pop stash"></td>
+                <td>
+                    Pobierz (zdejmij) z półki (Pop Stash) – Pobiera zmiany odłożone wcześniej na półkę (usuwając zmiany z półki) do
+                    lokalnego katalogu
+                </td>
+            </tr>
+            <tr>
+                <td><img src="icons/tool/lfs.png" alt="lfs"></td>
+                <td>
+                    Magazyn dużych plików (Large File Storage) – Jeżeli w repozytorium znajdują się pliki o dużej objętości i w repozytorium
+                    jest włączona obsługa dużych plików pojawi się przycisk LFS
+                </td>
+            </tr>
+            <tr>
+                <td><img src="icons/tool/glo.png" alt="glo"></td>
+                <td>
+                    Otwórz tablicę z zadaniami (Glo Issue Baoards) – otwiera dodatkową aplikację, w której można planować pracę, kolejne
+                    wydania wersji, scalanie zmian i tym podobne.
+                </td>
+            </tr>
+        </table>
+        <script src="js/skrypt.js"></script>
+    </body>
+</html>
